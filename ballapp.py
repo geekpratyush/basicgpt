@@ -28,5 +28,5 @@ def process():
 
 
 
-if st.button('Click me'):
+if st.button('Process Prompt...'):
     st.markdown(process())
