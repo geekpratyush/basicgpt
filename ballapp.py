@@ -24,3 +24,9 @@ if model := st.selectbox(
                         ],temperature=temp
                     )
                     st.markdown(response['choices'][0]['message']['content'])
+
+def process:
+    return "Hello, World!!!"
+
+if st.button(‘Process request.’):
+    st.markdown(process())
