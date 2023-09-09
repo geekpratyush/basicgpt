@@ -16,8 +16,7 @@ Use just these opensource dependencies from Maven.
 Write some Java methods to translate the Pacs.008 to MT103.""")
 
 def process():
-    #response = openai.ChatCompletion.create(
-    response = openai.Completion.create(
+    response = openai.ChatCompletion.create(
         model=model,
         messages=[
             {"role": "system", "content": system_prompt},
