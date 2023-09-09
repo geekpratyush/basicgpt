@@ -26,7 +26,7 @@ if model := st.selectbox(
                     st.markdown(response['choices'][0]['message']['content'])
 
 def process():
-    return "Hello, World!!!"
+    st.markdown("Hello, World!!!")
 
 
 st.button('Click me', on_click=process)
