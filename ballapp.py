@@ -1,7 +1,7 @@
 import openai
 import streamlit as st
 
-st.title('Welcome to my first custom prompt processor. :flag-ad:')
+st.title('Welcome to my first custom prompt processor. :flag-in:')
 temp=0.7
 
 model = st.selectbox(
