@@ -1,8 +1,7 @@
 import openai
 import streamlit as st
 
-st.title('Welcome to my first Streamlit app.')
-st.header('This is a header')
+st.title('Welcome to my first custom prompt processor. :flag-ad:')
 temp=0.7
 
 model = st.selectbox(
@@ -11,10 +10,10 @@ model = st.selectbox(
 temp=st.slider('Temperature', 0.0, 1.0, 0.7)
 api_key=st.text_input("Enter API Key","qhOkd68l0oS7icaNaR8YT3BlbkFJUXbBLv8AqrX0a57T4ax6")
 openai.api_key=api_key
-system_prompt=st.text_input("Enter  your system prompt:","YYou are a java developer.")
+system_prompt=st.text_input("Enter  your system prompt:","You are a java developer.")
 prompt=st.text_area("Enter  your prompt:","""Use the Prowide-core, prowide-iso20022. 
-                            Use just these opensource dependencies from Maven.
-                            Write some Java methods to translate the Pacs.008 to MT103.""")
+Use just these opensource dependencies from Maven.
+Write some Java methods to translate the Pacs.008 to MT103.""")
 
 def process():
     response = openai.ChatCompletion.create(
@@ -28,5 +27,5 @@ def process():
 
 
 
-if st.button('Process Prompt...'):
+if st.button('Process Prompt...👈'):
     st.markdown(process())
