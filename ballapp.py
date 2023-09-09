@@ -5,7 +5,7 @@ st.title('Welcome to my first Streamlit app.')
 st.header('This is a header')
 temp=0.7
 
-if temp:=st.slider('Temperature', 0, 1, 0.7):
+if temp:=st.slider('Temperature', 0.0, 1.0, 0.7):
 
     if api_key:=st.text_input("Enter API Key","st-"):
         openai.api_key=api_key
