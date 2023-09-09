@@ -29,4 +29,5 @@ def process():
     st.markdown("Hello, World!!!")
 
 
-st.button('Click me', on_click=process)
+if st.button('Click me'):
+    st.markdown(process())
